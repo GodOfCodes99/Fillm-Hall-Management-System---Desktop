@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Film Hall Management System", "Film Hall Management System\Film Hall Management System.csproj", "{006A5BD9-2EFD-47AF-BF39-5BD48B494268}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Film Hall Mangement System", "Film Hall Mangement System\Film Hall Mangement System.vdproj", "{8B728473-776B-41DB-A47A-BFAF28C977EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{006A5BD9-2EFD-47AF-BF39-5BD48B494268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006A5BD9-2EFD-47AF-BF39-5BD48B494268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006A5BD9-2EFD-47AF-BF39-5BD48B494268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006A5BD9-2EFD-47AF-BF39-5BD48B494268}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B728473-776B-41DB-A47A-BFAF28C977EC}.Debug|Any CPU.ActiveCfg = Debug
+		{8B728473-776B-41DB-A47A-BFAF28C977EC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3D1DC8F-EDD1-4E47-BC99-4DDFF7188864}
+	EndGlobalSection
+EndGlobal
