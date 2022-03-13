@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{006A5BD9-2EFD-47AF-BF39-5BD48B494268}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Film_Hall_Management_System</RootNamespace>
+    <AssemblyName>Film Hall Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>eap icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.2\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contact.Designer.cs">
+      <DependentUpon>contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_employee.Designer.cs">
+      <DependentUpon>delete_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_online_schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_online_schedule.Designer.cs">
+      <DependentUpon>delete_online_schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee_attendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee_attendence.Designer.cs">
+      <DependentUpon>employee_attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issue_tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issue_tickets.Designer.cs">
+      <DependentUpon>issue_tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_menu_counter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_menu_counter.Designer.cs">
+      <DependentUpon>main_menu_counter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="online_ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="online_ticket.Designer.cs">
+      <DependentUpon>online_ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="online_tickets_check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="online_tickets_check.Designer.cs">
+      <DependentUpon>online_tickets_check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ot_management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ot_management.Designer.cs">
+      <DependentUpon>ot_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_employee.Designer.cs">
+      <DependentUpon>update_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_remove_expences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_remove_expences.Designer.cs">
+      <DependentUpon>add_remove_expences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_employee_attendence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_employee_attendence.Designer.cs">
+      <DependentUpon>view_employee_attendence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_expences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_expences.Designer.cs">
+      <DependentUpon>view_expences.cs</DependentUpon>
+    </Compile>
+    <Compile Include="issue_ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="issue_ticket.Designer.cs">
+      <DependentUpon>issue_ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_menu.Designer.cs">
+      <DependentUpon>main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_film.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_film.Designer.cs">
+      <DependentUpon>add_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="show_film.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="show_film.Designer.cs">
+      <DependentUpon>show_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete_film.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete_film.Designer.cs">
+      <DependentUpon>delete_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_film.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_film.Designer.cs">
+      <DependentUpon>update_film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="add_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_employee.Designer.cs">
+      <DependentUpon>add_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_employee.Designer.cs">
+      <DependentUpon>view_employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="view_salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_salary.Designer.cs">
+      <DependentUpon>view_salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wage_cuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wage_cuts.Designer.cs">
+      <DependentUpon>wage_cuts.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="contact.resx">
+      <DependentUpon>contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_employee.resx">
+      <DependentUpon>delete_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_online_schedule.resx">
+      <DependentUpon>delete_online_schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee_attendence.resx">
+      <DependentUpon>employee_attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issue_tickets.resx">
+      <DependentUpon>issue_tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_menu_counter.resx">
+      <DependentUpon>main_menu_counter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="online_ticket.resx">
+      <DependentUpon>online_ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="online_tickets_check.resx">
+      <DependentUpon>online_tickets_check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ot_management.resx">
+      <DependentUpon>ot_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_employee.resx">
+      <DependentUpon>update_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_remove_expences.resx">
+      <DependentUpon>add_remove_expences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_employee_attendence.resx">
+      <DependentUpon>view_employee_attendence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_expences.resx">
+      <DependentUpon>view_expences.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="issue_ticket.resx">
+      <DependentUpon>issue_ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_menu.resx">
+      <DependentUpon>main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_film.resx">
+      <DependentUpon>add_film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="show_film.resx">
+      <DependentUpon>show_film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_film.resx">
+      <DependentUpon>delete_film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_film.resx">
+      <DependentUpon>update_film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_employee.resx">
+      <DependentUpon>add_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_employee.resx">
+      <DependentUpon>view_employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="view_salary.resx">
+      <DependentUpon>view_salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wage_cuts.resx">
+      <DependentUpon>wage_cuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="eap icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
